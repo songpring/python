@@ -83,3 +83,17 @@ def reading():
   f1.close()
 writing()
 reading()
+
+
+# 파일 저장된 '민경이'문자열을 '효롱이'로 바꿔서 저장하기
+a = open('test.txt','r')
+body = a.read()
+a.close()
+
+body = body.replace('민경이','효롱이')
+
+a = open('test.txt','w')
+a.write(body)
+a.close()
+
+
