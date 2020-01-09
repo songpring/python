@@ -97,3 +97,21 @@ a.write(body)
 a.close()
 
 
+# 더하기, 빼기 계산기 메서드 포함한 클래스 생성, 실행
+class Calculator:
+  def __init__(self):
+    self.value = 0
+
+  def add(self,val):
+    self.value += val
+
+  def minus(self,val):
+    self.value -= val
+
+cal = Calculator()
+cal.add(50)
+print(cal.value)
+cal.minus(80)
+print(cal.value)
+
+
